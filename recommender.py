@@ -15,7 +15,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 class MovieRecommender:
-    def __init__(self, csv_path="data/movies.csv"):
+    def __init__(self, csv_path="movies.csv"):
         self.df = pd.read_csv(csv_path)
         self._build_model()
 
